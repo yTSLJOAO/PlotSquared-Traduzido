@@ -1,0 +1,414 @@
+confirm:
+  failed_confirm: '&cVocê não possui uma ação pendente para confirmar.'
+  requires_confirm: '&cVocê confirma que quer utilizar &4%s&c? &- &8- &fPara confirmar
+    isto, utilize: &7/plot confirm'
+  expired_confirm: '&cA confirmação expirou, use o comando novamente.'
+move:
+  move_success: '&aMovido com sucesso.'
+  copy_success: '&aCopiado com sucesso.'
+  requires_unowned: '&cOps.. esse lugar está ocupado.'
+web:
+  generating_link: '&7Processando terreno...'
+  generating_link_failed: '&cFalhou a geração do link.'
+  save_failed: '&cFalha ao tentar salvar...'
+  load_null: '&cUtilize &4/plot load &cpara ver a lista de schematics.'
+  load_failed: '&cFalhou ao tentar carregar a schematic.'
+  load_list: '&cPara carregar a schematic, utilize: &4/plot load #'
+  save_success: '&aSalvo com sucesso.'
+compass:
+  compass_target: '&aLote bem-sucedido com bússola.'
+cluster:
+  cluster_available_args: '$1Comando do plot: $4list$2, $4create$2, $4delete$2, $4resize$2,
+    $4invite$2, $4kick$2, $4leave$2, $4members$2, $4info$2, $4tp$2, $4sethome'
+  cluster_list_heading: $2There are $1%s$2 clusters in this world
+  cluster_list_element: $2 - $1%s&-
+  cluster_intersection: $2The proposed area overlaps with $1%s$2 existing cluster/s
+  cluster_added: $4Criou com êxito o cluster.
+  cluster_deleted: $4Excluído com êxito o cluster.
+  cluster_resized: $4Redimensionou o cluster com êxito.
+  cluster_added_user: $4Usuário adicionado com êxito ao cluster.
+  cannot_kick_player: $2Você não pode kickar esse jogador
+  cluster_invited: '$1Você foi convidado para o seguinte cluster: $2%s'
+  cluster_removed: '$1Você foi removido do cluster: $2%s'
+  cluster_kicked_user: $4Chutou com sucesso o usuário
+  invalid_cluster: '$1Nome inválido do cluster: $2%s'
+  cluster_not_added: $2That player was not added to the plot cluster
+  cluster_cannot_leave: $1You must delete or transfer ownership before leaving
+  cluster_added_helper: $4Successfully added a helper to the cluster
+  cluster_removed_helper: $4Successfully removed a helper from the cluster
+  cluster_regenerated: $4Successfully started cluster regeneration
+  cluster_teleporting: $4Teleporting...
+  cluster_info: '$1Current cluster: $2%id%&-$1Name: $2%name%&-$1Owner: $2%owner%&-$1Size:
+    $2%size%&-$1Rights: $2%rights%'
+  cluster_outside: '&cA área proposta está fora da área do terreno: &6%s0'
+border:
+  border: '&cVocê está saindo da borda do mapa, volte para seu terreno.'
+unclaim:
+  unclaim_success: '&cVocê abandonou o seu terreno.'
+  unclaim_failed: '&cOcorreu um erro ao tentar abandonar seu terreno.'
+worldedit masks:
+  worldedit_delayed: '&7Aguarde enquanto processamos sua ação no WorldEdit...'
+  worldedit_run: '&7Desculpe pelo atraso, agora executando: &a%s'
+  require_selection_in_mask: '&4%s &cda sua seleção não está dentro da sua máscara
+    do terreno. Você só pode fazer edições em seu terreno.'
+  worldedit_volume: '&cVocê não pode selecionar um volume de &4%current%&c. O volume
+    máximo que você pode modificar é: &7%max%'
+  worldedit_iterations: '&cVocê não pode iterar &4%current% &cvezes. O número máximo
+    de iterações permitidas é: &7%max%'
+  worldedit_unsafe: '&cAcesso negado ao tentar utilizar o comando.'
+  worldedit_bypass: '&7Para ignorar suas restrições, utilize: &a/plot wea'
+  worldedit_bypassed: '&7Atualmente ignorando a restrição do WorldEdit.'
+  worldedit_unmasked: '&aSeu WorldEdit agora está irrestrito.'
+  worldedit_restricted: '&cSeu WorldEdit agora está restrito.'
+gamemode:
+  gamemode_was_bypassed: '&7Você ignorou o modo de jogo &f"{gamemode}" &7definido
+    no terreno: &a"{plot}"'
+height limit:
+  height_limit: '&cO mundo dos terrenos tem um limite de altura de &4{limit}&c.'
+records:
+  record_play: $2%player $2started playing record $1%name
+  notify_enter: $2%player $2entered your plot ($1%plot$2)
+  notify_leave: $2%player $2left your plot ($1%plot$2)
+swap:
+  swap_overlap: $2The proposed areas are not allowed to overlap
+  swap_dimensions: $2The proposed areas must have comparable dimensions
+  swap_syntax: '&cArgumentos inválidos, use: /plots swap <plot id>'
+  swap_success: $4Successfully swapped plots
+  started_swap: $2Started plot swap task. You will be notified when it finishes
+comment:
+  inbox_notification: '%s unread messages. Use /plot inbox'
+  not_valid_inbox_index: $2No comment at index %s
+  inbox_item: $2 - $4%s
+  comment_syntax: $2Use /plots comment [X;Z] <%s> <comment>
+  invalid_inbox: '$2That is not a valid inbox.&-$1Accepted values: %s'
+  no_perm_inbox: $2You do not have permission for that inbox
+  no_perm_inbox_modify: $2You do not have permission to modify that inbox
+  no_plot_inbox: $2You must stand in or supply a plot argument
+  comment_removed: $4Successfully deleted comment/s:n$2 - '$3%s$2'
+  comment_added: $4A comment has been left
+  comment_header: $2&m---------&r $1Comments $2&m---------&r
+  inbox_empty: '&cSem comentários'
+console:
+  not_console: '&cEste comando só pode ser utilizado através do console.'
+  is_console: '&cEste comando só pode ser utilizado dentro do servidor.'
+inventory:
+  inventory_usage: '&fUse&7: &6{usage}'
+  inventory_desc: '&fDescrição&7: &6{desc}'
+  inventory_category: '&fCategoria&7: &6{category}'
+clipboard:
+  clipboard_set: '&aO terreno atual agora é copiado para a área de transferência,
+    use &2/plot paste &apara colar.'
+  pasted: '&aA seleção do terreno foi colada com sucesso. Foi apagado da sua área
+    de transferência.'
+  paste_failed: '&cFalha ao colar a seleção, motivo: &4%s'
+  no_clipboard: '&cVocê não tem uma seleção na sua área de transferência'
+  clipboard_info: '&fSeleção atual - ID&7: &b%id&7, &fLargura&7: &b%width&7, &fTotal
+    de Blocos&7: &b%total'
+toggle:
+  toggle_enabled: '&fConfiguração %s&7: &aAtivada'
+  toggle_disabled: '&fConfiguração %s&7: &cDesativada'
+blocked command:
+  command_blocked: '&cO comando inserido não está disponível aqui.'
+done:
+  done_already_done: '&cEsse terreno já está marcado como concluído.'
+  done_not_done: '&cEste terreno não está marcado como concluído.'
+  done_insufficient_complexity: '&cEsse terreno é muito simples. Por favor, adicione
+    mais detalhes antes de usar este comando.'
+  done_success: '&aMarcou com êxito este terreno como concluído.'
+  done_removed: '&aAgora você pode continuar construindo neste terreno.'
+ratings:
+  rating_not_valid: '&cVocê precisa especificar um número entre 1 e 10.'
+  rating_already_exists: '&cVocê já classificou o terreno: &4%s'
+  rating_applied: '&aVocê classificou o terreno com sucesso: &2%s'
+  rating_not_your_own: '&cVocê não pode avaliar seu próprio terreno.'
+  rating_not_done: '&cVocê só pode avaliar terrenos concluídos.'
+  rating_not_owned: '&cVocê não pode avaliar um terreno que não possui um dono.'
+  ratings_purged: '&cClassificações eliminadas para este terreno.'
+tutorial:
+  rate_this: '&fClassifique este terreno.'
+  comment_this: '&fDeixe um comentário sobre esse terreno: &7%s'
+economy:
+  econ_disabled: '&cA economia não está ativada.'
+  cannot_afford_plot: '&cPara comprar um terreno é necessário ter $5.000 coins.'
+  not_for_sale: '&cEsse terreno não está à venda'
+  cannot_buy_own: '&cVocê não pode comprar seu próprio terreno.'
+  plot_sold: '&aSeu terreno "(%s0)" &afoi vendido para &7%s &apor $%s.'
+  cannot_afford_merge: '&cVocê não pode juntar os terrenos. Isso custa: &4%s'
+  added_balance: '&2+ &2$%s &afoi adicionado ao seu saldo'
+  removed_balance: '&4- &4$%s &cfoi retirado do seu saldo'
+  removed_granted_plot: '&cVocê costumava &6%s &cconcessão(ões) de terreno, você tem
+    &6%s &cesquerda.'
+setup:
+  setup_init: '$1Use: $2/plot setup <value>'
+  setup_step: '$3[$1Passo %s0$3] $1%s1 $2- $1Esperando: &2%s2 $1Padrao: &2%s3'
+  setup_invalid_arg: '$2%s0 não é um argumento válido %s1. Para cancelar o setup use:
+    $1/plot setup cancel'
+  setup_valid_arg: $2Value $1%s0 $2set to %s1
+  setup_finished: $4You should have been teleported to the created world. Otherwise you will need to set the generator manually using the bukkit.yml or your chosen world management plugin.
+  setup_world_taken: $2%s is already a registered plotworld
+  setup_missing_world: $2You need to specify a world name ($1/plot setup &l<world>$1 <generator>$2)&-$1Additional commands:&-$2 - $1/plot setup <value>&-$2 - $1/plot setup back&-$2 - $1/plot setup cancel
+  setup_missing_generator: $2You need to specify a generator ($1/plot setup <world> &l<generator>&r$2)&-$1Additional commands:&-$2 - $1/plot setup <value>&-$2 - $1/plot setup back&-$2 - $1/plot setup cancel
+  setup_invalid_generator: '&cGerador inválido. Possíveis opções: &6%s'
+schematics:
+  schematic_missing_arg: '&cVocê precisa especificar um argumento, valores possíveis:
+    &6test <name> , &6save , &6paste , &6exportall'
+  schematic_invalid: '&cEsse não é um schematic válido, motivo: &6%s'
+  schematic_valid: '&aEsse é um schematic válido.'
+  schematic_paste_failed: '&cFalha ao colar o schematic.'
+  schematic_paste_success: '&aO schematic foi colado com sucesso!'
+  schematic_too_large: '&cO terreno é muito grande para esta ação!'
+titles:
+  title_entered_plot: '&4'
+  title_entered_plot_sub: '&6&lRede Legacy &4%s'
+  prefix_greeting: '$1%id%$2> '
+  prefix_farewell: '$1%id%$2> '
+core:
+  prefix: '&7[&6Legacy&fPlots&7]'
+  enabled: '&aO PlotSquared agora está ativado.'
+  task_start: '&7Iniciando tarefa...'
+reload:
+  reloaded_configs: '&aO PlotSquared foi recarregado com sucesso.'
+  reload_failed: '&cFalha ao tentar recarregar as configurações do plugin.'
+desc:
+  desc_set: '&aConjunto de descrição do terreno.'
+  missing_desc: '&cVocê precisa especificar uma descrição.'
+  desc_unset: '&cDescrição do terreno não definida.'
+alias:
+  alias_set_to: '&aAlias de plotagem definido como: &2%alias%'
+  missing_alias: '&cVocê precisa especificar um alias.'
+  alias_too_long: '&cO alias deve ter <50 caracteres.'
+  alias_is_taken: '&cEsse alias já está sendo usado.'
+  alias_removed: '&cAlias do terreno removido.'
+position:
+  missing_position: '&cVocê precisa especificar uma posição, valores possíveis: &7none'
+  position_set: '&aA entrada do terreno foi definida para sua localização atual.'
+  home_argument: '&cPara definir o local, utilize: &4/plot sethome'
+  invalid_position: '&cA posição é considerada inválida.'
+  position_unset: '&cA posição inicial é redefinida para o local padrão.'
+time:
+  time_format: $1%hours%, %min%, %sec%
+permission:
+  no_schematic_permission: '&cAcesso negado ao tentar utilizar o comando.'
+  no_permission: '&cAcesso negado ao tentar utilizar o comando.'
+  no_permission_event: ''
+  no_plot_perms: '&cVocê não tem permissão para fazer isso neste terreno.'
+  cant_claim_more_plots: '&cVocê já tem o número máximo de terrenos.'
+  cant_transfer_more_plots: '&cVoce não pode passar mais terrenos para esse jogador.'
+  cant_claim_more_plots_num: '&cVocê não pode pegar mais de $1%s &aterrenos.'
+  you_be_denied: '&cVocê está proibido de entrar nesse terreno.'
+  merge_request_confirm: '&aPedido de juntar terreno de: &6%s'
+  cant_claim_more_clusters: '&cVocê não pode reivindicar mais clusters.'
+errors:
+  invalid_player_wait: '&cJogador não encontrado: &6%s&c, buscando... Tente novamente
+    em breve.'
+  invalid_player: '&cO usuário informado não está online.'
+  command_went_wrong: '&cOcorreu um erro ao executar esse comando...'
+  no_free_plots: '&cNão há terrenos gratuitos disponíveis.'
+  not_in_plot: '&cVocê não está dentro de um terreno.'
+  not_in_cluster: '&cVocê deve estar dentro de um cluster de terreno para executar
+    essa ação.'
+  not_in_plot_world: '&cVocê precisa estar no mundo dos terrenos. &- &7Para chegar
+    até lá, utilize: &a/warp plots'
+  plotworld_incompatible: '&cOs dois mundos devem ser compatíveis.'
+  not_valid_world: '&cEsse mundo não é válido &7(diferencía maiúsculas de minúsculas)'
+  not_valid_plot_world: '&cEsse não é um mundo de terreno válido. &7(diferencía maiúsculas
+    de minúsculas)'
+  no_plots: '&cVocê não possui nenhum terreno ainda.'
+  wait_for_timer: '&cUm temporizador de setblock está vinculado ao terreno atual ou
+    a você. Aguarde o término'
+  invalid_player_offline: '&cO usuário informado não está online.'
+  invalid_command_flag: '&cFlag de comando inválido: &4%s0'
+  error: '&cUm erro ocorreu: &4%s'
+  not_loaded: '&cNão foi possível carregar o terreno.'
+paste:
+  debug_report_created: '&aCarregou uma depuração completa para: &6%url%'
+purge:
+  purge_success: '&aForam eliminados &2%s &aterrenos'
+trim:
+  trim_in_progress: Uma tarefa de aparar o mundo já está em andamento!
+  not_valid_hybrid_plot_world: O gerenciador de terreno híbrido é necessário para executar esta ação
+block list:
+  block_list_separater: '$1,$2 '
+biome:
+  need_biome: '&cVocê precisa especificar um bioma válido.'
+  biome_set_to: '&aVocê definiu o bioma do terreno para: &2'
+teleport:
+  teleported_to_plot: ''
+  teleported_to_road: ''
+  teleport_in_seconds: ''
+  teleport_failed: '&cTeletransporte cancelado devido a movimento ou dano.'
+set block:
+  set_block_action_finished: '&aA última ação do setblock está concluída.'
+unsafe:
+  debugallowunsafe_on: '&aAções inseguras permitidas'
+  debugallowunsafe_off: '&cAções inseguras desativadas'
+debug:
+  debug_header: $1Informações sobre depuração&-
+  debug_section: $2>> $1&l%val%
+  debug_line: $2>> $1%var%$2:$1 %val%&-
+invalid:
+  not_valid_data: '&cEsse não é um ID de dados válido.'
+  not_valid_block: '&cEsse não é um bloco válido: &4%s'
+  not_allowed_block: '&cEsse bloco não é permitido: &4%s'
+  not_valid_number: '&cEsse número não é válido dentro do terreno: &4%s'
+  not_valid_plot_id: '&cEsse não é um ID de terreno válido.'
+  plot_id_form: '&cO ID do terreno deve estar no formato: &4X;Y &4e.g. &4-5;7'
+  not_your_plot: '&cEsse terreno não pertence a você.'
+  no_such_plot: '&cNão existe tal terreno'
+  player_has_not_been_on: '&cEsse jogador não está no mundo de terrenos.'
+  found_no_plots: '&cNão foi encontrado nenhum terreno.'
+  found_no_plots_for_player: '&cNão foram encontrados terrenos para o jogador: &4%s'
+camera:
+  camera_started: '&aVocê entrou no modo de câmera para o terreno: &2%s'
+  camera_stopped: '&cVocê não está mais no modo de câmera'
+need:
+  need_plot_number: '&cVocê precisa especificar o número do terreno.'
+  need_block: '&cVocê precisa especificar um bloco'
+  need_plot_id: '&cVocê precisa especificar o ID do terreno.'
+  need_plot_world: '&cVocê precisa especificar um mundo de terrenos.'
+  need_user: '&cVocê precisa especificar um nome de usuário'
+info:
+  none: ' &c-/-'
+  unknown: '&c@TheDisk'
+  plot_unowned: '&cO plot atual deve ter um proprietário para realizar esta ação.'
+  plot_info_unclaimed: '&cO terreno onde você está não tem nenhum dono.'
+  plot_info_header: '&-&fInformações do terreno...'
+  plot_info: ' &fTerreno&7: &b%id% &- &fProprietário&7:&b%owner% $1&- &fBioma&7: &b%biome%&-
+    &fAvaliações: &e%rating% &- &fConfiáveis&7:&2%trusted%$1&- &fMembros&7:&2%members%$1&-
+    &fNegados&7:&c%denied%$1&- &fFlags&7:%flags%'
+  plot_info_footer: '&- '
+  plot_info_trusted: $1Trusted:$2 %trusted%
+  plot_info_members: $1Members:$2 %members%
+  plot_info_denied: $1Denied:$2 %denied%
+  plot_info_flags: $1Flags:$2 %flags%
+  plot_info_biome: $1Biome:$2 %biome%
+  plot_info_rating: $1Rating:$2 %rating%
+  plot_info_owner: $1Owner:$b %owner%
+  plot_info_id: $1ID:$2 %id%
+  plot_info_alias: $1Alias:$2 %alias%
+  plot_info_size: $1Size:$2 %size%
+  plot_user_list: ' &1%user%&2,'
+  info_syntax_console: $2/plot info X;Y
+  everyone: '&a*'
+  now: Agora
+  never: '&cNunca'
+  plot_info_seen: $1Seen:$2 %seen%
+  plot_flag_list: $1%s0:%s1$2
+working:
+  generating_component: '&7Começando a gerar...'
+  clearing_plot: '&7Limpando plot async...'
+  clearing_done: '&7Processando... &-&aO terreno foi limpo com sucesso.'
+  plot_not_claimed: '&cO terreno não possui nenhum proprietário.'
+  plot_is_claimed: '&cEste terreno já possui um proprietário.'
+  claimed: '&7Processando... &-&aVocê comprou um terreno com sucesso.'
+  deleting_done: '&7Processando... &-&cO terreno foi deletado com sucesso.'
+list:
+  comment_list_header_paged: '&fPágina: &a%cur&7/&a%max &fLista de &b%amount% &fcomentários.'
+  clickable: ' (interactive)'
+  plot_list_header_paged: '&fPágina: &a%cur&7/&a%max &fLista de &b%amount% &fterrenos.'
+  plot_list_header: '&fLista de &a%word% &fterrenos.'
+  plot_list_item: ' &1%id%&2:&1%world &2- &1%owner'
+  plot_list_item_ordered: '&e%in° &b(%id) &3(%world) &7- &6%owner'
+  plot_list_footer: ' %word% um total de %num% comprados %plot%'
+  area_list_header_paged: '&fPágina: &a%cur&7/&a%max &fLista de &b%amount% &fáreas'
+left:
+  left_plot: '&cVocê saiu do terreno.'
+chat:
+  plot_chat_format: '&6[PCHAT] &b[%plot_id%] &f%sender%&8: &6%msg%'
+  plot_chat_forced: '&cEste mundo obriga todos a usar o chat do terreno.'
+  plot_chat_on: '&aO chat do terreno está ativado.'
+  plot_chat_off: '&cO chat do terreno está desativado.'
+  plot_chat_spy_format: '&4[PCHAT SPY] &c[%plot_id%] &f%sender%&8: &c%msg%'
+deny:
+  denied_removed: '&aO jogador não está mais banido do terreno.'
+  denied_added: '&aVocê baniu o jogador de entrar neste terreno.'
+  denied_need_argument: '&cNão foi possível encontrar argumentos concretos... &- &cUtilize:
+    &4/plot denied add <jogador> &cou &4/plot denied remove <jogador>'
+  was_not_denied: '&cEsse jogador não foi banido neste terreno.'
+  you_got_denied: '&cVocê foi banido do terreno em que estava anteriormente.'
+rain:
+  need_on_off: '&cVocê precisa especificar um valor, valores possíveis: &aon&c, &4off'
+  setting_updated: '&aVocê atualizou com êxito a configuração'
+flag:
+  flag_key: '&fChave: &7%s'
+  flag_type: '&fUse: &7%s'
+  flag_desc: '&fDesc: &7%s'
+  not_valid_flag: '&cEssa não é uma flag válida.'
+  not_valid_value: '&cOs valores da flag devem ser alfanuméricos.'
+  flag_not_in_plot: '&cO terreno não possui essa flag.'
+  flag_not_removed: '&cVocê já removeu esta flag.'
+  flag_not_added: '&cNão foi possível adicionar a flag.'
+  flag_removed: '&cA flag foi removida com sucesso.'
+  flag_added: '&aA flag foi adicionada com sucesso.'
+  not_valid_flag_suggested: '&cNão foi possível encontrar a flag correta... &-&cTalvez
+    você quis dizer: &4%s'
+trusted:
+  trusted_added: '&aVocê adicionou o jogador como confiável no terreno.'
+  trusted_removed: '&cVocê removeu a permissão de confiável do jogador no terreno.'
+  was_not_added: '&cEsse jogador não estava como confiável neste terreno.'
+  plot_removed_user: '&cO terreno &4%s &cdos quais você foi adicionado como confiável,
+    foi excluído devido à inatividade do proprietário.'
+member:
+  removed_players: '&aForam removidos &2%s &ajogadores do terreno.'
+  already_owner: '&cEste jogador ja é o proprietário do terreno.'
+  already_added: '&cEste jogador ja foi adicionado no terreno.'
+  member_added: '&7Agora, esse jogador pode criar/quebrar enquanto o dono do terreno
+    estiver online'
+  member_removed: '&cVocê removeu a permissão de membro do jogador no terreno.'
+  member_was_not_added: '&cEsse jogador não foi adicionado nesse terreno.'
+  plot_max_members: '&cNúmero máximo de jogadores atingido.'
+owner:
+  set_owner: '&aFoi definido com sucesso um novo dono para o terreno.'
+  now_owner: '&aAgora você é o dono do terreno: &2%s'
+  set_owner_cancelled: '&cA ação do proprietário foi cancelada.'
+signs:
+  owner_sign_line_1: -={ &4x &0} -
+  owner_sign_line_2: 'ID: &4%id%'
+  owner_sign_line_3: '&o%plr%'
+  owner_sign_line_4: -={ &4x &0} -
+help:
+  help_header: '&-&7&f&l[ &fLista de comandos disponíveis &l]'
+  help_page_header: ''
+  help_footer: '&-&f &- &8- &a/p auto: &fCompra um terreno aleatório &- &8- &a/p claim:
+    &fCompra o terreno atual que estiver&- &8- &a/p clear: &fLimpa as construções
+    do terreno. &- &8- &a/p delete: &fDeleta seu terreno &- &8- &a/p add: &fDa permissão
+    de membro ao jogador &- &8- &a/p trust: &fDa permissão de confiável ao jogador
+    &- &8- &a/p remove: &fRemove a permissão do jogador &- &8- &a/p deny: &fProíbe
+    o jogador de entrar no terreno &- &8- &a/p undeny: &fDesproíbe a entrada do jogador
+    no terreno &- &8- &a/p info: &fVer informações do terreno atual &- &8- &a/plotconfig:
+    &fAbre as configurações do terreno &-&7  '
+  help_info_item: ''
+  help_item: ''
+  direction: '&fDireção atual&7: '
+set:
+  set_attribute: $4Successfully set %s0 set to %s1
+cap:
+  entity_cap: $2You are not allowed to spawn more mobs
+merge:
+  merge_not_valid: $2This merge request is no longer valid.
+  merge_accepted: $2The merge request has been accepted
+  success_merge: $2Plots have been merged!
+  merge_requested: $2Successfully sent a merge request
+  no_perm_merge: '$2You are not the owner of the plot: $1%plot%'
+  no_available_automerge: $2You do not own any adjacent plots in the specified direction or are not allowed to merge to the required size.
+  unlink_required: $2An unlink is required to do this.
+  unlink_impossible: $2You can only unlink a mega-plot
+  unlink_success: $2Successfully unlinked plots.
+commandconfig:
+  not_valid_subcommand: $2That is not a valid subcommand
+  did_you_mean: '$2Did you mean: $1%s'
+  name_little: $2%s0 name is too short, $1%s1$2<$1%s3
+  no_commands: $2I'm sorry, but you're not permitted to use any subcommands.
+  subcommand_set_options_header: '$2Possible Values: '
+  command_syntax: '$1Usage: $2%s'
+  flag_tutorial_usage: '$1Have an admin set the flag: $2%s'
+near:
+  plot_near: '$1Players: %s0'
+kick:
+  you_got_kicked: $4You got kicked!
+grants:
+  granted_plots: '$1Result: $2%s $1grants left'
+  granted_plot: $1You granted %s0 plot to $2%s1
+  granted_plot_failed: '$1Grant failed: $2%s'
+'-':
+  custom_string: '-'
